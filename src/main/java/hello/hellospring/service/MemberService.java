@@ -7,10 +7,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service // 스프링 컨테이너에 등록
+@Service
 public class MemberService {
 
-    private final MemberRepository memberRepository;
+    private MemberRepository memberRepository;
 
 
     public MemberService(MemberRepository memberRepository) {
