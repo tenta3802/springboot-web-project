@@ -1,10 +1,12 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+@Primary
 @Repository
 public class MemoryMemberRepository implements MemberRepository {
 
